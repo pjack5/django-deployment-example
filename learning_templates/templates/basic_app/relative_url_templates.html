@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to Relative URL Templates!</h1>
+    <!-- using keyword "url", name of application from app urls.py file
+     colon, and then use the name you assigned, like "other"   -->
+     <!-- have to set up an app name in urls.py, and have to provide a name -->
+    <a href="{% url 'basic_app:other' %}">The Other Page</a>
+
+    <!-- django.contrib.admin is already an "app" built into django, with it's own urls.py file -->
+    <!-- it also has a view named index -->
+    <a href="{% url 'admin:index' %}">Link to Admin Page</a>
+
+    <!-- Index page that's not in the application urls-->
+    <a href="{% url 'index' %}">Link to Index</a>
+
+  </body>
+</html>

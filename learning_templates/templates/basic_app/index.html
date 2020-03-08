@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to Index</h1>
+    <!-- <h2>This is index.html page showing</h2> -->
+    <!-- passing in key from context_dict of the index view, then pipe,
+         then method you're calling against it. Example below that,
+          the add method takes an argument, "99"-->
+    <h1> {{ text|cut:'hello' }} </h1>
+    <h1> {{ number|add:"99" }} </h1>
+
+  {% endblock %}
+
+
+<!-- Any text WITHIN the block body_block does NOT come from the extended html file -->
