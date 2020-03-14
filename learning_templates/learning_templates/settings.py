@@ -28,7 +28,7 @@ SECRET_KEY = 'n7b_i*+1-71%1bujmm2w-lyoa@*8$d&*ip1cy&by$9c8rn#*(@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pjack5.pythonanywhere.com']
 
 
 # Application definition
